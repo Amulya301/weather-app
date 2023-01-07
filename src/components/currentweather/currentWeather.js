@@ -3,7 +3,7 @@ import "./currentWeather.css";
 import Card from "react-bootstrap/Card";
 import Search from "../searchbar/Search";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "../../geoapi";
-import Forecast from "../forecast/forecast";
+import Forecast from "../Forecast/Forecast";
 import Header from "../Header/Header";
 
 const CurrentWeather = () => {

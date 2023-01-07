@@ -1,12 +1,5 @@
 import React from "react";
-// import {
-//   Accordion,
-//   AccordionItem,
-//   AccordionItemButton,
-//   AccordionItemHeading,
-//   AccordionItemPanel,
-// } from "react-accessible-accordion";
-import "./forecast.css";
+import "./Forecast.css";
 
 const Forecast = ({ data }) => {
   const days = [
