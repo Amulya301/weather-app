@@ -8,6 +8,7 @@ const Search = ({ onSearchChange }) =>{
     const [search, setSearch] = useState("");
 
   const loadOptions = async (city) => {
+    console.log(geoApiOptions);
     try {
       const response = await fetch(
         `${url}/cities?minPopulation=100&limit=10&sort=-population&namePrefix=${city}`,
