@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./currentWeather.css";
 import Card from "react-bootstrap/Card";
-import Search from "../searchbar/Search";
+import Search from "../Search/Search";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "../../geoapi";
 import Forecast from "../Forecast/Forecast";
 import Header from "../Header/Header";
