@@ -1,0 +1,78 @@
+.component {
+  background-image: url("/public/icons/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 1px;
+}
+.weather {
+  width: 400px;
+  height: 200px;
+  border-radius: 50px;
+  color: #3b4d5e;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem auto 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.temp-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1;
+}
+
+.weather-img {
+  width: 100px;
+}
+
+.temperature {
+  font-weight: bolder;
+  font-size: 60px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 15px 0;
+}
+
+.forecast {
+  width: 40%;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.value {
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 760px) {
+  .component {
+    height: auto;
+  }
+}
