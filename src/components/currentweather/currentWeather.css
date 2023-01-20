@@ -1,5 +1,5 @@
 .component {
-  background-image: url("/public/icons/image.jpg");
+  background-image: url("/public/icons/beach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -7,7 +7,7 @@
 }
 .weather {
   width: 400px;
-  height: 200px;
+  height: auto;
   border-radius: 50px;
   color: #3b4d5e;
   background-color: rgba(255, 255, 255, 0.3);
@@ -71,8 +71,9 @@
   font-size: 14px;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1000px) {
   .component {
     height: auto;
+    width: auto;
   }
 }

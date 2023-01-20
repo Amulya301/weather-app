@@ -9,12 +9,11 @@ const Home = () => {
     navigate(path);
   };
   return (
-    <div>
+    <div className="home_page">
       <Header />
     <div className="home">
-      <img src="icons/girl.jpg" alt="weather" />
       <div className="tag-btn">
-        <h1>Weather in your pockets directly in just few clicks!!</h1>
+        <h2>Weather in your pockets directly in just few clicks!!</h2>
         <button className="btn" onClick={routeChange}>
           Explore
         </button>

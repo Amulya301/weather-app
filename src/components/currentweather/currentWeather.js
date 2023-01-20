@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./currentWeather.css";
 import Card from "react-bootstrap/Card";
 import Search from "../Search/Search";
-import { WEATHER_API_URL, WEATHER_API_KEY } from "../../geoapi";
 import Forecast from "../Forecast/Forecast";
 import Header from "../Header/Header";
 
@@ -10,6 +9,8 @@ const CurrentWeather = () => {
 
   const [currentWeather, setCurrentWeather] = useState();
   const [forecastWeather, setforecastWeather] = useState();
+  const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5";
+  const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
   const handleChange = (data) => {
     const[latitude, longitude] = data.value.split(" ");
@@ -34,7 +35,7 @@ const CurrentWeather = () => {
   return (
     <div className="component">
       <Header />
-      <Search key="search" onSearchChange={handleChange} />
+      <Search key="search"onSearchChange={handleChange} />
       {currentWeather ? 
       <div className="weather">
         <Card>
