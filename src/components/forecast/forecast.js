@@ -1,5 +1,5 @@
 import React from "react";
-import "./Forecast.css";
+import "./forecast.css";
 
 const Forecast = ({ data }) => {
   const days = [

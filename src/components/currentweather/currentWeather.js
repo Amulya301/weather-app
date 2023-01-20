@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./currentWeather.css";
 import Card from "react-bootstrap/Card";
 import Search from "../Search/Search";
-import Forecast from "../Forecast/Forecast";
+import Forecast from "../forecast/forecast";
 import Header from "../Header/Header";
 
 const CurrentWeather = () => {
