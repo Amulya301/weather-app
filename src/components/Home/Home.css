@@ -6,9 +6,8 @@
 }
 
 .home_page{
-  background-image: url('/public/icons/beach.jpg');
+  background: url('/public/icons/beach.jpg') no-repeat center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -39,10 +38,10 @@
   box-shadow: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-device-width: 1000px) {
   .home_page {
-    height: 100vh;
-    width: 100vw;
+    height: 300vh;
+    max-width: 100%;
   }
 
   .home h2{
@@ -51,8 +50,6 @@
   }
 
   .home .btn{
-    width: 10rem;
-    font-size: 1vw;
     margin-left: 45%;
   }
 }
