@@ -76,4 +76,9 @@
     height: auto;
     width: auto;
   }
+
+  .weather{
+    width: auto;
+    height: auto;
+  }
 }
