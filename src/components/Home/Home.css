@@ -8,17 +8,14 @@
 .home_page{
   background-image: url('/public/icons/beach.jpg');
   background-size: cover;
-  background-repeat: repeat-x;
-  background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
-
 .home h2 {
   color: #911F27;
-  width: 600px;
-  font-size: 80px;
+  width: 40vw;
+  font-size: 5vw;
   text-align: center;
   margin: 5rem 30rem auto;
 }
@@ -29,22 +26,33 @@
   border-radius: 25px;
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
-  width: 250px;
-  position: absolute;
-  margin: 2rem 40rem;
+  width: 15vw;
+  margin: 2rem 40rem auto;
   cursor: pointer;
   box-shadow: 0px 0px 2px 2px #ff7f50;
 }
-
-.tag-item {
-  display: inline-block;
+.home .btn:hover{
+  background-color: #911F27;
+  border: none;
+  box-shadow: none;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 800px) {
   .home_page {
-    height: auto;
-    width: auto;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .home h2{
+    font-size: 5vw;
+    margin-left: 40%;
+  }
+
+  .home .btn{
+    width: 10rem;
+    font-size: 1vw;
+    margin-left: 45%;
   }
 }
