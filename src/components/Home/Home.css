@@ -11,11 +11,15 @@
   height: 100vh;
 }
 
+.home{
+  text-align: center;
+  display: block;
+}
+
 .home h2 {
   color: #911F27;
   width: 40vw;
   font-size: 5vw;
-  text-align: center;
   margin: 5rem 30rem auto;
 }
 
@@ -23,7 +27,6 @@
   background-color: coral;
   border:none;
   border-radius: 25px;
-  text-align: center;
   color: #ffffff;
   font-size: 2vw;
   font-weight: bold;
@@ -43,13 +46,20 @@
     height: 300vh;
     max-width: 100%;
   }
+  .home{
+    display: block;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+  }
 
   .home h2{
     font-size: 5vw;
-    margin-left: 40%;
+    margin: 5rem auto 0 auto;
   }
 
   .home .btn{
-    margin-left: 45%;
+    display: block;
+    margin: 10px auto;
   }
 }
